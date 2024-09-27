@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey - We Are Stars</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				color: #eeeeee;
+				margin: 0;
+				background: url("background.jpg") no-repeat center center fixed;
+				background-size: cover;
+			}
+
+			.container {
+				width: 60%;
+				margin: 50px auto;
+				background: rgba(34, 40, 49, 0.9);
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+			}
+
+			h2,
+			h3 {
+				text-align: center;
+				color: #76abae;
+			}
+
+			fieldset {
+				margin-bottom: 15px;
+				padding: 20px;
+				border: 2px solid #76abae;
+				border-radius: 8px;
+			}
+
+			legend {
+				font-weight: bold;
+				color: #76abae;
+			}
+
+			label {
+				display: block;
+				margin: 10px 0;
+			}
+
+			input,
+			select,
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin: 5px 0;
+				border: 1px solid #eeeeee;
+				border-radius: 4px;
+			}
+
+			input[type="radio"],
+			input[type="checkbox"] {
+				width: auto;
+			}
+
+			button {
+				width: 100%;
+				padding: 12px;
+				background: #76abae;
+				color: #eeeeee;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background: #31363f;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>We Are Stars</h1>
+			<nav>
+				<a href="index.html">Home</a> | <a href="about.html">About Us</a> |
+				<a href="contact.html">Contact Us</a> |
+				<a href="survey.html">Survey</a>
+			</nav>
+		</header>
+
+		<div class="container">
+			<h2>Survey</h2>
+			<p>
+				Please take a few minutes to complete our survey. Your feedback helps us
+				improve!
+			</p>
+
+			<form
+				action="mailto:your-email@example.com"
+				method="post"
+				enctype="text/plain"
+			>
+				<!-- Text Input Field -->
+				<fieldset>
+					<legend>1. Personal Information</legend>
+					<label for="fullName">Full Name:</label>
+					<input
+						type="text"
+						id="fullName"
+						name="fullName"
+						placeholder="Enter your name"
+						required
+					/>
+				</fieldset>
+
+				<!-- HTML5 New Input Type (Email) -->
+				<fieldset>
+					<legend>2. Contact Information</legend>
+					<label for="email">Email Address:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Enter your email address"
+						required
+					/>
+				</fieldset>
+
+				<!-- Radio Input Question -->
+				<fieldset>
+					<legend>3. How did you hear about us?</legend>
+					<label
+						><input
+							type="radio"
+							name="referral"
+							value="Social Media"
+							required
+						/>
+						Social Media</label
+					>
+					<label
+						><input type="radio" name="referral" value="Friend or Family" />
+						Friend or Family</label
+					>
+					<label
+						><input type="radio" name="referral" value="Website" />
+						Website</label
+					>
+					<label
+						><input type="radio" name="referral" value="Other" /> Other</label
+					>
+				</fieldset>
+
+				<!-- Checkbox Input Question -->
+				<fieldset>
+					<legend>4. What services are you interested in?</legend>
+					<label
+						><input type="checkbox" name="services" value="Acting" />
+						Acting</label
+					>
+					<label
+						><input type="checkbox" name="services" value="Modeling" />
+						Modeling</label
+					>
+					<label
+						><input type="checkbox" name="services" value="Influencing" />
+						Influencing</label
+					>
+					<label
+						><input type="checkbox" name="services" value="Voice Acting" />
+						Voice Acting</label
+					>
+				</fieldset>
+
+				<!-- Dropdown Box -->
+				<fieldset>
+					<legend>5. Rate our website</legend>
+					<label for="rating">Choose a rating:</label>
+					<select id="rating" name="rating" required>
+						<option value="">Select a rating</option>
+						<option value="Excellent">Excellent</option>
+						<option value="Good">Good</option>
+						<option value="Average">Average</option>
+						<option value="Poor">Poor</option>
+					</select>
+				</fieldset>
+
+				<!-- Submit Button -->
+				<button type="submit">Submit Survey</button>
+			</form>
+		</div>
+
+		<footer>
+			<p style="text-align: center; color: #eeeeee; margin-top: 20px">
+				We Are Stars &copy; 2024
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>We Are Stars - Homepage</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="scripts.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>We Are Stars</h1>
+			<nav>
+				<a href="index.html">Home</a> | <a href="about.html">About Us</a> |
+				<a href="contact.html">Contact Us</a> |
+				<a href="survey.html">Survey</a>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="slideshow-container">
+				<img class="slides active" src="./assets/photo1.jpeg" alt="Slide 1" />
+				<img class="slides" src="./assets/photo2.jpeg" alt="Slide 2" />
+				<img class="slides" src="./assets/photo3.jpeg" alt="Slide 3" />
+				<img class="slides" src="./assets/photo4.jpeg" alt="Slide 4" />
+			</div>
+			<div class="slideshow-dots">
+				<span class="dot active-dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+
+			<h2>Gallery</h2>
+			<div class="gallery">
+				<img src="./assets/photo5.jpeg" alt="Talent 1" />
+				<img src="./assets/photo6.jpeg" alt="Talent 2" />
+				<img src="./assets/photo1.jpeg" alt="Talent 3" />
+			</div>
+
+			<h2>Success Cases</h2>
+			<div class="cards">
+				<div class="card">
+					<h3>John Doe</h3>
+					<p>Successful Actor featured in multiple TV series.</p>
+				</div>
+				<div class="card">
+					<h3>Jane Smith</h3>
+					<p>Top model for fashion brands globally.</p>
+				</div>
+				<div class="card">
+					<h3>Mark Lee</h3>
+					<p>Influencer with over 1 million followers.</p>
+				</div>
+			</div>
+
+			<h2>Membership Plans</h2>
+			<div class="cards">
+				<div class="card">
+					<h3>6-Month Plan</h3>
+					<p>$550 plus GST</p>
+				</div>
+				<div class="card">
+					<h3>1-Year Plan</h3>
+					<p>$800 plus GST</p>
+				</div>
+				<div class="card">
+					<h3>Lifetime Plan</h3>
+					<p>$3500 plus GST</p>
+				</div>
+			</div>
+
+			<div class="newsletter">
+				<input
+					type="email"
+					id="newsletter-email"
+					placeholder="Enter your email for newsletter"
+				/>
+				<button onclick="subscribeNewsletter()">Subscribe</button>
+			</div>
+		</div>
+
+		<footer>
+			<p>We Are Stars &copy; 2024</p>
+		</footer>
+	</body>
+</html>
